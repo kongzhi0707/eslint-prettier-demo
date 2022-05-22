@@ -1,0 +1,16 @@
+{
+  "env": {  // 全局环境变量
+    "browser": true, // 浏览器环境
+    "node": true    // node 环境
+  },
+  "extends":["plugin:prettier/recommended"], // 使用 prettier 推荐配置
+  // "extends": "eslint:recommended",  // 继承 eslint 默认配置
+  "parserOptions": {   // 指定 javascript 语言类型和风格
+    "ecmaVersion": 2015,
+    "sourceType": "module"  // 导入方式设定为模块导入
+  },
+  "rules": {  // 配置规则
+    "no-unused-vars": 1,  // 警告不允许出现未使用的变量
+    "semi": [1, "always"] // 警告强制加上句尾分号
+  }
+}
